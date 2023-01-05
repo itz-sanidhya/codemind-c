@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,sum=0,sum2=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++) {
+        sum=sum+i;
+        sum2=sum2+(i*i);
+    }
+    printf("%d",(sum*sum)-sum2);
+}
