@@ -1,19 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b=0,c,n,i=0,j=1,k;
+    int n,i,j,k=1,x=0,y,z;
     scanf("%d",&n);
-    while(n<10000000000000000000000000000000000000000000000000)
+    while(n>0)
     {
-        b=(n%10);
+        i=n%10;
         n=n/10;
-        if(b==0)
-        {
-             break;
-        }
-        i=i+b;
-        j=j*b;
+        k=k*i;
+        x=x+i;
     }
-    k=j-i;
-    printf("%d",k);
+    z=k-x;
+    printf("%d",z);
 }
